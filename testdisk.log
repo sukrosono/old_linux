@@ -1,0 +1,121 @@
+
+
+Wed Nov 29 20:27:34 2017
+Command line: TestDisk
+
+TestDisk 7.0, Data Recovery Utility, April 2015
+Christophe GRENIER <grenier@cgsecurity.org>
+http://www.cgsecurity.org
+OS: Linux, kernel 4.6.0-kali1-amd64 (#1 SMP Debian 4.6.4-1kali1 (2016-07-21)) x86_64
+Compiler: GCC 6.2
+ext2fs lib: 1.43.4, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.0
+/dev/sda: LBA, HPA, LBA48, DCO support
+/dev/sda: size       976773168 sectors
+/dev/sda: user_max   976773168 sectors
+/dev/sda: native_max 976773168 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63, sector size=512 - WDC WD5000BPVT-75HXZT1, S/N:WD-WXJ1A51D2966, FW:01.01A01
+
+Partition table type (auto): Intel
+Disk /dev/sda - 500 GB / 465 GiB - WDC WD5000BPVT-75HXZT1
+Partition table type: Intel
+
+Analyse Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+Geometry from i386 MBR: head=255 sector=63
+NTFS at 6374/59/22
+NTFS at 19288/238/23
+NTFS at 32305/93/45
+get_geometry_from_list_part_aux head=255 nbr=1
+get_geometry_from_list_part_aux head=255 nbr=1
+Current partition structure:
+ 1 P Linux                   12 223 20  6374  59 21  102195200
+ 2 * HPFS - NTFS           6374  59 22 19288 238 22  207474688
+ 3 P HPFS - NTFS          19288 238 23 32174  48  2  207001600
+ 4 E extended             32174 113  2 60801  47 46  459888642
+ 5 L Linux Swap           32174 113  4 32304 251 11    2097152
+   X extended             32305   0  1 45359 136 25  209721103
+ 6 L HPFS - NTFS          32305  93 45 45359 136 25  209715200
+   X extended             45359 136 26 60801  47 46  248070144
+ 7 L Linux                45359 168 58 60801  47 46  248068096 [kali-home]
+
+search_part()
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+NTFS at 0/32/33
+filesystem size           204800
+sectors_per_cluster       8
+mft_lcn                   4
+mftmirr_lcn               12799
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS              0  32 33    12 223 19     204800
+     NTFS, blocksize=4096, 104 MB / 100 MiB
+
+recover_EXT2: s_block_group_nr=0/389, s_mnt_count=13/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 12774400
+recover_EXT2: part_size 102195200
+     Linux                   12 223 20  6374  59 21  102195200
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 52 GB / 48 GiB
+NTFS at 6374/59/22
+filesystem size           207474688
+sectors_per_cluster       8
+mft_lcn                   4
+mftmirr_lcn               25904895
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS           6374  59 22 19288 238 22  207474688
+     NTFS, blocksize=4096, 106 GB / 98 GiB
+NTFS at 19288/238/23
+filesystem size           207001600
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          19288 238 23 32174  48  2  207001600
+     NTFS, blocksize=4096, 105 GB / 98 GiB
+     Linux Swap           32174 113  4 32304 250 58    2097136
+     SWAP2 version 1, pagesize=4096, 1073 MB / 1023 MiB
+NTFS at 32305/93/45
+filesystem size           209715200
+sectors_per_cluster       8
+mft_lcn                   4
+mftmirr_lcn               13107199
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          32305  93 45 45359 136 25  209715200
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+
+recover_EXT2: s_block_group_nr=0/946, s_mnt_count=393/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 31008512
+recover_EXT2: part_size 248068096
+     Linux                45359 168 58 60801  47 46  248068096 [kali-home]
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 127 GB / 118 GiB
+
+Results
+     HPFS - NTFS              0  32 33    12 223 19     204800
+     NTFS, blocksize=4096, 104 MB / 100 MiB
+     Linux                   12 223 20  6374  59 21  102195200
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 52 GB / 48 GiB
+     HPFS - NTFS           6374  59 22 19288 238 22  207474688
+     NTFS, blocksize=4096, 106 GB / 98 GiB
+     HPFS - NTFS          19288 238 23 32174  48  2  207001600
+     NTFS, blocksize=4096, 105 GB / 98 GiB
+     Linux Swap           32174 113  4 32304 251 11    2097152
+     SWAP2 version 1, pagesize=4096, 1073 MB / 1024 MiB
+     HPFS - NTFS          32305  93 45 45359 136 25  209715200
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+     Linux                45359 168 58 60801  47 46  248068096 [kali-home]
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 127 GB / 118 GiB
+
+Hint for advanced users. dmsetup may be used if you prefer to avoid to rewrite the partition table for the moment:
+echo "0 204800 linear /dev/sda 2048" | dmsetup create test0
+echo "0 102195200 linear /dev/sda 206848" | dmsetup create test1
+echo "0 207474688 linear /dev/sda 102402048" | dmsetup create test2
+echo "0 207001600 linear /dev/sda 309876736" | dmsetup create test3
+echo "0 2097152 linear /dev/sda 516882432" | dmsetup create test4
+echo "0 209715200 linear /dev/sda 518985728" | dmsetup create test5
+echo "0 248068096 linear /dev/sda 728702976" | dmsetup create test6
+SIGINT detected! TestDisk has been killed.

@@ -1,0 +1,25 @@
+smartctl 6.6 2016-05-31 r4324 [x86_64-linux-4.6.0-kali1-amd64] (local build)
+Copyright (C) 2002-16, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF READ SMART DATA SECTION ===
+SMART Self-test log structure revision number 1
+Num  Test_Description    Status                  Remaining  LifeTime(hours)  LBA_of_first_error
+# 1  Short offline       Completed: read failure       90%     25861         12789008
+# 2  Extended offline    Completed: read failure       90%     25855         12789012
+# 3  Short offline       Completed: read failure       90%     25853         12789009
+# 4  Short offline       Completed: read failure       90%     25851         12789014
+# 5  Short offline       Completed: read failure       90%     25851         12789008
+# 6  Short offline       Completed: read failure       90%     25830         12789008
+# 7  Short offline       Completed: read failure       90%     25829         12789008
+# 8  Short offline       Completed: read failure       90%     25829         12789012
+# 9  Short offline       Completed: read failure       90%     25829         12789008
+#10  Short offline       Completed: read failure       90%     25828         12789008
+#11  Short offline       Completed without error       00%      3072         -
+#12  Short offline       Completed without error       00%      3016         -
+#13  Extended offline    Completed without error       00%      3006         -
+#14  Short offline       Completed without error       00%      3004         -
+#15  Short offline       Completed without error       00%      3004         -
+#16  Extended offline    Completed without error       00%      3004         -
+#17  Short offline       Completed without error       00%      3001         -
+#18  Short offline       Completed without error       00%         0         -
+

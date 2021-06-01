@@ -1,0 +1,9 @@
+b: when you should learn python?
+my accident: when your system failing.
+b: why you learn python?
+a: because my system was failing, and python was pre-installed by some linux distros.
+   Out of the box because learning was really liberating :)
+
+dirty layout
+  ah i so addicted to code, even my hdd was failing. i learn python on the way trying to fix
+the problem. Even i have couple of reason to fix the problem, but rally the main drive that i left some opened PR on chai repository at github.

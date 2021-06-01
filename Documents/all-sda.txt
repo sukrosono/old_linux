@@ -1,0 +1,118 @@
+smartctl 6.4 2015-06-04 r4109 [x86_64-linux-4.3.0-kali1-amd64] (local build)
+Copyright (C) 2002-15, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Model Family:     Western Digital Scorpio Blue Serial ATA (AF)
+Device Model:     WDC WD5000BPVT-75HXZT1
+Serial Number:    WD-WXJ1A51D2966
+LU WWN Device Id: 5 0014ee 6abf9ef9d
+Firmware Version: 01.01A01
+User Capacity:    500,107,862,016 bytes [500 GB]
+Sector Sizes:     512 bytes logical, 4096 bytes physical
+Rotation Rate:    5400 rpm
+Device is:        In smartctl database [for details use: -P show]
+ATA Version is:   ATA8-ACS (minor revision not indicated)
+SATA Version is:  SATA 2.6, 3.0 Gb/s
+Local Time is:    Thu Dec  7 04:48:26 2017 UTC
+SMART support is: Available - device has SMART capability.
+SMART support is: Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART overall-health self-assessment test result: PASSED
+
+General SMART Values:
+Offline data collection status:  (0x02)	Offline data collection activity
+					was completed without error.
+					Auto Offline Data Collection: Disabled.
+Self-test execution status:      ( 121)	The previous self-test completed having
+					the read element of the test failed.
+Total time to complete Offline 
+data collection: 		(12000) seconds.
+Offline data collection
+capabilities: 			 (0x7b) SMART execute Offline immediate.
+					Auto Offline data collection on/off support.
+					Suspend Offline collection upon new
+					command.
+					Offline surface scan supported.
+					Self-test supported.
+					Conveyance Self-test supported.
+					Selective Self-test supported.
+SMART capabilities:            (0x0003)	Saves SMART data before entering
+					power-saving mode.
+					Supports SMART auto save timer.
+Error logging capability:        (0x01)	Error logging supported.
+					General Purpose Logging supported.
+Short self-test routine 
+recommended polling time: 	 (   2) minutes.
+Extended self-test routine
+recommended polling time: 	 ( 119) minutes.
+Conveyance self-test routine
+recommended polling time: 	 (   5) minutes.
+SCT capabilities: 	       (0x7035)	SCT Status supported.
+					SCT Feature Control supported.
+					SCT Data Table supported.
+
+SMART Attributes Data Structure revision number: 16
+Vendor Specific SMART Attributes with Thresholds:
+ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_FAILED RAW_VALUE
+  1 Raw_Read_Error_Rate     0x002f   200   200   051    Pre-fail  Always       -       39
+  3 Spin_Up_Time            0x0027   204   179   021    Pre-fail  Always       -       791
+  4 Start_Stop_Count        0x0032   093   093   000    Old_age   Always       -       7172
+  5 Reallocated_Sector_Ct   0x0033   200   200   140    Pre-fail  Always       -       0
+  7 Seek_Error_Rate         0x002e   200   200   000    Old_age   Always       -       0
+  9 Power_On_Hours          0x0032   065   065   000    Old_age   Always       -       25933
+ 10 Spin_Retry_Count        0x0032   100   100   000    Old_age   Always       -       0
+ 11 Calibration_Retry_Count 0x0032   100   100   000    Old_age   Always       -       0
+ 12 Power_Cycle_Count       0x0032   094   094   000    Old_age   Always       -       6851
+191 G-Sense_Error_Rate      0x0032   001   001   000    Old_age   Always       -       631707
+192 Power-Off_Retract_Count 0x0032   198   198   000    Old_age   Always       -       1687
+193 Load_Cycle_Count        0x0032   105   105   000    Old_age   Always       -       286181
+194 Temperature_Celsius     0x0022   110   083   000    Old_age   Always       -       37
+196 Reallocated_Event_Count 0x0032   200   200   000    Old_age   Always       -       0
+197 Current_Pending_Sector  0x0032   197   197   000    Old_age   Always       -       293
+198 Offline_Uncorrectable   0x0030   197   197   000    Old_age   Offline      -       285
+199 UDMA_CRC_Error_Count    0x0032   200   200   000    Old_age   Always       -       0
+200 Multi_Zone_Error_Rate   0x0008   193   193   000    Old_age   Offline      -       1039
+240 Head_Flying_Hours       0x0032   066   066   000    Old_age   Always       -       25043
+241 Total_LBAs_Written      0x0032   200   200   000    Old_age   Always       -       81531098836
+242 Total_LBAs_Read         0x0032   200   200   000    Old_age   Always       -       114189616750
+254 Free_Fall_Sensor        0x0032   200   200   000    Old_age   Always       -       0
+
+SMART Error Log Version: 1
+No Errors Logged
+
+SMART Self-test log structure revision number 1
+Num  Test_Description    Status                  Remaining  LifeTime(hours)  LBA_of_first_error
+# 1  Short offline       Completed: read failure       90%     25924         12789012
+# 2  Short offline       Completed: read failure       90%     25924         209331
+# 3  Extended offline    Completed: read failure       90%     25920         209335
+# 4  Short offline       Completed: read failure       90%     25861         12789008
+# 5  Extended offline    Completed: read failure       90%     25855         12789012
+# 6  Short offline       Completed: read failure       90%     25853         12789009
+# 7  Short offline       Completed: read failure       90%     25851         12789014
+# 8  Short offline       Completed: read failure       90%     25851         12789008
+# 9  Short offline       Completed: read failure       90%     25830         12789008
+#10  Short offline       Completed: read failure       90%     25829         12789008
+#11  Short offline       Completed: read failure       90%     25829         12789012
+#12  Short offline       Completed: read failure       90%     25829         12789008
+#13  Short offline       Completed: read failure       90%     25828         12789008
+#14  Short offline       Completed without error       00%      3072         -
+#15  Short offline       Completed without error       00%      3016         -
+#16  Extended offline    Completed without error       00%      3006         -
+#17  Short offline       Completed without error       00%      3004         -
+#18  Short offline       Completed without error       00%      3004         -
+#19  Extended offline    Completed without error       00%      3004         -
+#20  Short offline       Completed without error       00%      3001         -
+#21  Short offline       Completed without error       00%         0         -
+
+SMART Selective self-test log data structure revision number 1
+ SPAN  MIN_LBA  MAX_LBA  CURRENT_TEST_STATUS
+    1        0        0  Not_testing
+    2        0        0  Not_testing
+    3        0        0  Not_testing
+    4        0        0  Not_testing
+    5        0        0  Not_testing
+Selective self-test flags (0x0):
+  After scanning selected spans, do NOT read-scan remainder of disk.
+If Selective self-test is pending on power-up, resume after 0 minute delay.
+

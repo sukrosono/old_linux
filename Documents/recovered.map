@@ -1,0 +1,11 @@
+# Mapfile. Created by GNU ddrescue version 1.22
+# Command line: ddrescue --ask --verbose --binary-prefixes --idirect --retry=100 --input-position=12582160s --output-position=0 --size=1s /dev/sda1 recovered.bin recovered.map
+# Start time:   2017-12-06 23:56:59
+# Current time: 2017-12-06 23:56:59
+# Finished
+# current_pos  current_status  current_pass
+0x17FFA2200     +               4
+#      pos        size  status
+0x00000000  0x17FFA2000  ?
+0x17FFA2000  0x00000200  +
+0x17FFA2200  0xAAEC5DE00  ?

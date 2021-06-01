@@ -1,0 +1,10 @@
+Optimizing logical sector size for physical sector size 4096 HDD
+
+https://unix.stackexchange.com/questions/178899/optimizing-logical-sector-size-for-physical-sector-size-4096-hdd
+
+Bash programming, should be playlist
+
+https://www.youtube.com/watch?v=xtS2NiABf54
+
+partialy download video (untested)
+https://unix.stackexchange.com/questions/230481/how-to-download-portion-of-video-with-youtube-dl-command

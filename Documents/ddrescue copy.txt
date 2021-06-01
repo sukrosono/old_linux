@@ -1,0 +1,18 @@
+#ddrescue --ask --verbose --binary-prefixes --idirect --force /dev/sda1 /dev/null disk.map
+GNU ddrescue 1.22
+About to copy 49900 MiBytes
+from '/dev/sda1' [UNKNOWN] (52323942400)
+  to '/dev/null' (0)
+Proceed (y/N)? y
+    Starting positions: infile = 0 B,  outfile = 0 B
+    Copy block size: 128 sectors       Initial skip size: 1024 sectors
+Sector size: 512 Bytes
+
+     ipos:  45232 MiB, non-trimmed:        0 B,  current rate:       0 B/s
+     opos:  45232 MiB, non-scraped:        0 B,  average rate: 10260 KiB/s
+non-tried:        0 B,  bad-sector:   760320 B,    error rate:     170 B/s
+  rescued:  49899 MiB,   bad areas:      131,        run time:      1h 23m
+pct rescued:   99.99%, read errors:     1562,  remaining time:          0s
+                              time since last successful read:         38s
+Finished  
+#
